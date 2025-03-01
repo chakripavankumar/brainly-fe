@@ -3,7 +3,7 @@ interface InputProps{
     placeholder:string
     onchange?:()=>void;
     reference?:any;
-    type:string
+    type?:string
 }
 export function Input({placeholder,reference,type}: InputProps){
     return<>

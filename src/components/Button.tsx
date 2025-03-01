@@ -17,7 +17,7 @@ const defaultStyles = "px-4 py-2 rounded-md flex justify-center items-center fon
 export function Button ( {varient,text,startIcon, onClick, fullWidth,loading} :ButtonProps){
    return(
     <button  onClick={onClick}className={varientClases[varient] + " " + defaultStyles + 
-    `${fullWidth ?  " w-full flex justify-center items-center" : " "}`} disabled={loading}
+    `${fullWidth ?  " w-full flex justify-center items-center" : " "} ${loading ? "opacity-45" : ""}`} disabled={loading}
      >
         {text}
         {startIcon}
